@@ -72,6 +72,18 @@ const srRight = ScrollReveal({
 
 srRight.reveal('.skills-box', { delay: 100 });
 srRight.reveal('.form-control', { delay: 100 });
+// Seleccionar todos los bloques de proyectos
+const projectBoxes = document.querySelectorAll('.project-box');
+
+// Agregar evento de clic a cada bloque
+projectBoxes.forEach(box => {
+    box.addEventListener('click', () => {
+        const url = box.getAttribute('data-url'); // Obtener la URL
+        if (url) {
+            window.open(url, '_blank'); // Abrir la URL en una nueva pestaña
+        }
+    });
+});
 
 /* ----- CHANGE ACTIVE LINK ----- */
 const sections = document.querySelectorAll('section[id]');
