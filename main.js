@@ -72,6 +72,8 @@ const srRight = ScrollReveal({
 
 srRight.reveal('.skills-box', { delay: 100 });
 srRight.reveal('.form-control', { delay: 100 });
+
+
 // Seleccionar todos los bloques de proyectos
 const projectBoxes = document.querySelectorAll('.project-box');
 
